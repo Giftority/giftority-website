@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Gifting - Giftority</title>
+  <meta name="description" content="Thoughtful gifts for every occasion – personalized, curated, experiences">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Giftority Logo"></a>
+      <button id="mobileMenuToggle" class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="corporate.html">Corporate</a></li>
+        <li><a href="wedding-events.html">Events</a></li>
+        <li><a href="personal-gifting.html">Personal</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Personal Gifting</h1>
+      <p>Curated gifts for every occasion – personalization & experiences</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+      <h2 class="section-title">Shop by Occasion</h2>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon">🎂</div><h3>Birthdays</h3><p>Make birthdays special</p><a href="contact.html" class="btn-link">Shop →</a></div>
+        <div class="service-card"><div class="service-icon">💝</div><h3>Anniversaries</h3><p>Romantic gifts</p><a href="contact.html" class="btn-link">Shop →</a></div>
+        <div class="service-card"><div class="service-icon">🎉</div><h3>Festivals</h3><p>Festive gift hampers</p><a href="contact.html" class="btn-link">Shop →</a></div>
+      </div>
+
+      <h2 class="section-title mt-2">Shop by Recipient</h2>
+      <div class="features-grid">
+        <div class="feature"><h3>👔 For Him</h3><p>Tie kits, gadgets</p></div>
+        <div class="feature"><h3>👗 For Her</h3><p>Jewelry, spa sets</p></div>
+        <div class="feature"><h3>👶 For Kids</h3><p>Toys & games</p></div>
+        <div class="feature"><h3>👨‍👩‍👧 For Family</h3><p>Home decor</p></div>
+      </div>
+
+      <h2 class="section-title mt-2">Featured Gifts</h2>
+      <div class="products-grid">
+        <div class="product-card"><img src="images/curated-hamper.jpg" class="product-image"><div class="product-content"><h3 class="product-name">Curated Hamper</h3><div class="product-price">₹1,499</div><p class="product-description">Premium goodies</p><a href="contact.html" class="btn btn-secondary">Order</a></div></div>
+        <div class="product-card"><img src="images/personalized-gift.jpg" class="product-image"><div class="product-content"><h3 class="product-name">Personalized Gift</h3><div class="product-price">₹999</div><p class="product-description">Custom name & photo</p><a href="contact.html" class="btn btn-secondary">Customize</a></div></div>
+        <div class="product-card"><img src="images/experience-gift.jpg" class="product-image"><div class="product-content"><h3 class="product-name">Experience Gift</h3><div class="product-price">₹2,499</div><p class="product-description">Spa, dining, adventure</p><a href="contact.html" class="btn btn-secondary">Explore</a></div></div>
+      </div>
+
+      <h2 class="section-title mt-2">Gift Finder Quiz</h2>
+      <div class="service-card" style="max-width:600px; margin:auto;">
+        <form name="gift-finder" method="POST" data-netlify="true" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="gift-finder">
+          <div class="form-group"><label>Recipient*</label><select name="recipient" required><option value="">Select</option><option>Him</option><option>Her</option><option>Kids</option><option>Family</option></select></div>
+          <div class="form-group"><label>Occasion*</label><select name="occasion" required><option>Birthday</option><option>Anniversary</option><option>Festival</option><option>Other</option></select></div>
+          <div class="form-group"><label>Budget*</label><select name="budget" required><option>Under ₹1,000</option><option>₹1,000-2,500</option><option>2,500-5,000</option><option>5,000+</option></select></div>
+          <div class="form-group"><label>Interests*</label><input type="text" name="interests" required></div>
+          <div class="form-group"><label>Email*</label><input type="email" name="email" required></div>
+          <button type="submit" class="btn btn-secondary" style="width:100%">Get Recommendations</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-column"><img src="images/logo.png" class="footer-logo"><p>Gift Beyond Things.</p></div>
+      <div class="footer-column"><h4>Quick Links</h4><ul><li><a href="corporate.html">Corporate</a></li><li><a href="wedding-events.html">Events</a></li></ul></div>
+      <div class="footer-column"><h4>Contact</h4><p>sales.giftority@gmail.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Giftority Pvt Ltd</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
